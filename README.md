@@ -62,8 +62,6 @@ Pergeseran ini dilakukan untuk membuka ruang bagi elemen temp agar dapat dimasuk
 ## 5.3.3 Verifikasi Hasil Percobaan
 ![alt text](image-3.png)
 ![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
 
 ## 5.3.4 Pertanyaan
 ## 1.	Perhatikan perulangan di dalam bubbleSort() di bawah ini:
@@ -84,3 +82,36 @@ Jumlah perulangan i =
 Sehingga tahap bubble sort = 49 tahap.
 ## 2.	Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
 ![alt text](image-7.png)
+
+## 5.3.6 Verifikasi Hasil Percobaan
+![alt text](image-5.png)
+
+## 5.3.7 Pertanyaan
+## Di dalam method selection sort, terdapat baris program seperti di bawah ini:
+Untuk apakah proses tersebut, jelaskan!
+Proses tersebut digunakan untuk menukar posisi elemen terkecil yang ditemukan dengan elemen pada posisi awal bagian yang belum terurut. Tujuannya adalah agar setiap tahap Selection Sort dapat menempatkan nilai terkecil pada posisi yang benar.
+
+## 5.4.2 Verifikasi Hasil Percobaan
+![alt text](image-6.png)
+
+## 5.4.3 Pertanyaan
+## Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.
+```java
+void insertionSortDesc() {
+    for (int i = 1; i < listMhs.length; i++) {
+        Mahasiswa21 temp = listMhs[i];
+        int j = i - 1;
+
+        while (j >= 0 && listMhs[j].ipk < temp.ipk) {
+            listMhs[j + 1] = listMhs[j];
+            j--;
+        }
+
+        listMhs[j + 1] = temp;
+    }
+}
+```
+Perubahan terdapat pada kondisi:
+```java
+listMhs[j].ipk < temp.ipk
+```
