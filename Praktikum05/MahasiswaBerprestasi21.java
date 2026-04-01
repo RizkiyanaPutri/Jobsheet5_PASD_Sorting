@@ -16,7 +16,9 @@ public class MahasiswaBerprestasi21 {
 
     void tampil() {
         for (Mahasiswa21 m : listMhs) {
-            m.tampilInformasi();
+            if (m != null) {   // PERUBAHAN
+                m.tampilInformasi();
+            }
         }
     }
 
@@ -35,6 +37,7 @@ public class MahasiswaBerprestasi21 {
     void selectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
             int min = i;
+
             for (int j = i + 1; j < listMhs.length; j++) {
                 if (listMhs[j].ipk < listMhs[min].ipk) {
                     min = j;

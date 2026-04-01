@@ -56,3 +56,31 @@ Perintah ini berfungsi untuk menggeser elemen satu posisi ke kanan.
 Penjelasan:
 Nilai pada indeks j dipindahkan ke indeks j + 1.
 Pergeseran ini dilakukan untuk membuka ruang bagi elemen temp agar dapat dimasukkan pada posisi yang benar.
+
+## 5.3 Praktikum 2- (Sorting Menggunakan Array of Object) 
+
+## 5.3.3 Verifikasi Hasil Percobaan
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+## 5.3.4 Pertanyaan
+## 1.	Perhatikan perulangan di dalam bubbleSort() di bawah ini:
+```java
+for (int i = 0; i < listMhs.length - 1; i++) {
+    for (int j = 1; j < listMhs.length - i; j++)
+```
+## a.	Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
+Karena proses Bubble Sort membutuhkan n-1 tahap pengurutan untuk memastikan seluruh data telah terurut. Jika jumlah data n, maka tahap maksimal yang diperlukan adalah n-1 kali perulangan.
+## b.	Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?
+Karena setiap tahap Bubble Sort akan memindahkan nilai terbesar ke posisi paling akhir, sehingga elemen terakhir tidak perlu dibandingkan lagi pada tahap berikutnya. Oleh karena itu batas perulangan dikurangi dengan nilai i.
+## c.	Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i  akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+Jika jumlah data 50, maka:
+
+Jumlah perulangan i =
+50 - 1 = 49 kali
+
+Sehingga tahap bubble sort = 49 tahap.
+## 2.	Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
+![alt text](image-7.png)
