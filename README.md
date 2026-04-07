@@ -115,3 +115,13 @@ Perubahan terdapat pada kondisi:
 ```java
 listMhs[j].ipk < temp.ipk
 ```
+
+## Latihan Praktikum
+## Fitur 1
+![alt text](image-8.png)
+## Fitur 2
+![alt text](image-9.png)
+## Fitur 3
+![alt text](image-10.png)
+## Fitur 4
+![alt text](image-11.png)
